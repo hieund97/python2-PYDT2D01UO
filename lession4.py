@@ -2,6 +2,7 @@ import random
 
 rank = []
 
+
 def math():
     operator = ["+", "-", "*", "/"]
 
@@ -33,6 +34,11 @@ def math():
         print(f"Đáp án là: {result}")
         return 0
 
+
+def display_rank():
+    pass
+
+
 while True:
     print("1. Choi tro choi")
     print("2. Xem bang xep hang")
@@ -47,7 +53,8 @@ while True:
             point += math()
             print("Chương trình kết thúc")
             print(f"Bạn đạt được {point}")
-        
+
         rank.append([user_name, point])
     if choice == 2:
         print(rank)
+        # Hiển thị danh sách rank đã sắp xếp
