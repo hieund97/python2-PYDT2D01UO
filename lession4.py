@@ -22,7 +22,7 @@ def math():
         result = number_1 * number_2
     elif random_operator == "/":
         string_math = f"{number_1} / {number_2} = "
-        result = round(number_1 / number_2, 2)  # round hàm làm tròn 2 số sau dấu phẩy
+        result = round(number_1 / number_2, 2) 
 
     user_result = float(input(f"Nhap ket qua cua phep tinh: {string_math}"))
 
@@ -36,7 +36,12 @@ def math():
 
 
 def display_rank():
-    pass
+    rank.sort(key=lambda x: x[1], reverse=True)
+    if not rank:
+        print("BXH chưa có người chơi")
+    else:
+        for i in range(len(rank)):
+            print(f"{i+1}. {rank[i][0]} - {rank[i][1]}")
 
 
 while True:
@@ -49,12 +54,16 @@ while True:
     if choice == 1:
         point = 0
         user_name = input("Hay nhap ten cua ban: ")
-        for i in range(5):
+        for i in range(3):
             point += math()
             print("Chương trình kết thúc")
             print(f"Bạn đạt được {point}")
 
         rank.append([user_name, point])
-    if choice == 2:
-        print(rank)
-        # Hiển thị danh sách rank đã sắp xếp
+    elif choice == 2:
+        display_rank()
+    elif choice == 3:
+        print("Chương trình đã kết thúc")
+        break
+    else:
+        print("Lựa chọn không hợp lệ")
