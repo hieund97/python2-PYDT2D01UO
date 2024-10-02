@@ -33,18 +33,27 @@ dictionary {}
 # kiểm tra từ đó có trong file hay không
 
 
-def check_word(word):
-    with open("sample.txt", "r") as f:
-        noidung = f.read()
-        text = noidung.split() # phân tách các chữ theo 1 ký tự, mặc định là dấu cách
-        for i in text:
-            if i == word:
-                return True
-        return False
+# def check_word(word):
+#     with open("sample.txt", "r") as f:
+#         noidung = f.read()
+#         text = noidung.split() # phân tách các chữ theo 1 ký tự, mặc định là dấu cách
+#         for i in text:
+#             if i == word:
+#                 return True
+#         return False
     
-word = input("Nhập từ kiểm tra: ")
+# word = input("Nhập từ kiểm tra: ")
 
-if check_word(word):
-    print(f"{word} có nằm trong file")
-else:
-    print(f"{word} không nằm trong file")
+# if check_word(word):
+#     print(f"{word} có nằm trong file")
+# else:
+#     print(f"{word} không nằm trong file")
+    
+    
+    
+    
+    
+set = {"hello", "world", "hello", "python", "hello"}
+
+print(set)
+
