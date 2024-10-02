@@ -11,12 +11,14 @@ dictionary {}
 
 """
 
-# dict = {
-#     "name": "Trường",
-#     "tuoi": 15,
-#     "diachi": "Ha Noi",
-#     "gioi_tinh": True
-# }
+# dict = {'apple': 5, 'banana': 10, 'orange': 15}
+
+# if 5 in dict:
+#     dict['apple'] += 1
+# else:
+#     dict['apple'] = 1
+    
+# print(dict)
 
 # set1 = {15,16,17, "hello"}
 # set2 = {15,16,17,"hello1"}
@@ -27,11 +29,9 @@ dictionary {}
 # print(dict)
 # print(set1.issubset(set2))
 
-
 # lập trình kiểm tra từ có nằm trong file sample.txt hay khong
 # Tạo 1 input nhập từ
 # kiểm tra từ đó có trong file hay không
-
 
 # def check_word(word):
 #     with open("sample.txt", "r") as f:
@@ -41,19 +41,14 @@ dictionary {}
 #             if i == word:
 #                 return True
 #         return False
-    
+
 # word = input("Nhập từ kiểm tra: ")
 
 # if check_word(word):
 #     print(f"{word} có nằm trong file")
 # else:
 #     print(f"{word} không nằm trong file")
-    
-    
-    
-    
-    
-set = {"hello", "world", "hello", "python", "hello"}
 
-print(set)
+# set = {"hello", "world", "hello", "python", "hello"}
 
+# print(set)
