@@ -38,3 +38,13 @@ if kq_tuan_tu is None:
 else:
     print(f"{search_value} nam tai vi tri {kq_tuan_tu} trong danh sách bằng thuật toán tìm kiếm tuần tự")
     print(f"{search_value} nam tai vi tri {kq_nhi_phan} trong danh sách bằng thuật toán tìm kiếm nhị phân")
+    
+    
+    
+arr = []
+
+so_luong = int(input("Nhap so luong nguoi choi: "))
+for i in range(so_luong):
+    player_name = input("nhap ten nguoi choi: ")
+    player_score = float(input("nhap diem cua nguoi choi: "))
+    arr.append((player_name, player_score))
